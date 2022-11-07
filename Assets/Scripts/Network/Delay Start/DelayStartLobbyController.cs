@@ -7,6 +7,7 @@ using UnityEngine;
 public class DelayStartLobbyController : MonoBehaviourPunCallbacks
 {
     //Button used for creating and joining a game
+    [SerializeField] private GameObject delayLoadingButton;
     [SerializeField] private GameObject delayStartButton;
     [SerializeField] private GameObject delayCancelButton;
     //numbers of player in the room at one time
@@ -22,6 +23,7 @@ public class DelayStartLobbyController : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         PhotonNetwork.AutomaticallySyncScene = true;
+        delayLoadingButton.SetActive(false);
         delayStartButton.SetActive(true);
     }
 

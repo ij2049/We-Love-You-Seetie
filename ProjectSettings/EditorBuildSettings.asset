@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/00_Quick Main Menu.unity
-    guid: 4524c3e25e79b9649939985de5ca643a
+    path: Assets/Scenes/00_Delay Main Menu.unity
+    guid: 37d08a890da78b945b586803d2d2e97b
   - enabled: 1
-    path: Assets/Scenes/02_Main Scene.unity
+    path: Assets/Scenes/03_Waiting Room.unity
+    guid: 4986615f8d3f17a46aadd9be43a51ed4
+  - enabled: 1
+    path: Assets/Scenes/04_Main Scene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
