@@ -9,7 +9,7 @@ public class GameSetUpController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CreatePlayer();
+        //CreatePlayer();
     }
 
     private void CreatePlayer()
