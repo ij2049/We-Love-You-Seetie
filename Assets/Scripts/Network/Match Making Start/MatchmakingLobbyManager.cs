@@ -23,7 +23,7 @@ public class MatchmakingLobbyManager : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        PhotonNetwork.JoinLobby();
+        JoinLobby();
     }
 
     public void OnClickCreate()
@@ -32,6 +32,11 @@ public class MatchmakingLobbyManager : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() {MaxPlayers = 2});
         }
+    }
+
+    private void JoinLobby()
+    {
+        PhotonNetwork.JoinLobby();
     }
 
     public override void OnJoinedRoom()
