@@ -10,7 +10,8 @@ public class MatchmakingNameManager : MonoBehaviourPunCallbacks
 {
 
     [SerializeField] private TMP_InputField usernameInput;
-    [SerializeField] public TextMeshProUGUI btn_txt;
+    [SerializeField] private TextMeshProUGUI btn_txt;
+    [SerializeField] private string nextSceName;
 
     public void OnClickConnect()
     {
@@ -24,6 +25,6 @@ public class MatchmakingNameManager : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster()
     {
-        SceneManager.LoadScene("02_Matchmaking waiting room");
+        SceneManager.LoadScene(nextSceName);
     }
 }

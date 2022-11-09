@@ -3,6 +3,7 @@ using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DelayStartLobbyController : MonoBehaviourPunCallbacks
 {
@@ -12,6 +13,7 @@ public class DelayStartLobbyController : MonoBehaviourPunCallbacks
     [SerializeField] private GameObject delayCancelButton;
     //numbers of player in the room at one time
     [SerializeField] private int roomSize;
+    [SerializeField] private string NextSceName;
     
     // Start is called before the first frame update
     void Start()
@@ -35,6 +37,14 @@ public class DelayStartLobbyController : MonoBehaviourPunCallbacks
         //First tries to join an existing room
         PhotonNetwork.JoinRandomRoom();
         Debug.Log("delay start");
+    }
+
+    public void MatchMakingStart()
+    {
+        delayStartButton.SetActive(false);
+        delayCancelButton.SetActive(true);
+        SceneManager.LoadScene(NextSceName);
+
     }
 
     public override void OnJoinRandomFailed(short returnCode, string message)

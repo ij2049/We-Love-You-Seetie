@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0000016120479}
+  m_AnchoredPosition: {x: 0, y: 0.00032726486}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &44189075
@@ -307,8 +307,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 803894242}
   m_HandleRect: {fileID: 803894241}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 1
+  m_Value: 0
+  m_Size: 0.9999621
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3534,8 +3534,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84775b80fdb3dd946973200a71bbbb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joinRoomPrefab: {fileID: 0}
-  contentObjects: {fileID: 0}
+  joinRoomPrefab: {fileID: 8243018706591060091, guid: 6bd0c5f4ce0860549855635f4f3a842e, type: 3}
+  contentObjects: {fileID: 44189074}
   roomInputField: {fileID: 1133852912}
   lobbyPanel: {fileID: 1725766779}
   roomPanel: {fileID: 1928522076}
