@@ -146,6 +146,8 @@ public class MatchmakingLobbyManager : MonoBehaviourPunCallbacks
             
 =======
 >>>>>>> main
+=======
+>>>>>>> parent of 58827b2... Network Player choice and spawn1
             playerItemList.Add(newPlayerItem);
         }
     }
