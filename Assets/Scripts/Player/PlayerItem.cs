@@ -5,18 +5,19 @@ using UnityEngine;
 <<<<<<< HEAD
 using Photon.Pun;
 using Photon.Realtime;
-<<<<<<< HEAD
 using Hashtable = ExitGames.Client.Photon.Hashtable;
+<<<<<<< HEAD
 =======
 >>>>>>> main
 =======
 >>>>>>> parent of 58827b2... Network Player choice and spawn1
+=======
+>>>>>>> parent of 48dc655... Network - Player choice and spawn2
 
 public class PlayerItem : MonoBehaviourPunCallbacks
 {
 <<<<<<< HEAD
     [SerializeField] private TextMeshProUGUI playerName;
-<<<<<<< HEAD
     [SerializeField] private Color highlightColor;
     [SerializeField] private GameObject leftArrowButton;
     [SerializeField] private GameObject rightArrowButton;
@@ -96,6 +97,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         {
             playerProperties["playerAvatar"] = 0;
         }
+<<<<<<< HEAD
 =======
 =======
     // Start is called before the first frame update
@@ -114,5 +116,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
 =======
         
 >>>>>>> parent of 58827b2... Network Player choice and spawn1
+=======
+>>>>>>> parent of 48dc655... Network - Player choice and spawn2
     }
 }
