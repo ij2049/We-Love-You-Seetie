@@ -6,11 +6,15 @@ using UnityEngine.UI;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+<<<<<<< HEAD
 using Hashtable = ExitGames.Client.Photon.Hashtable;
+=======
+>>>>>>> main
 
 public class PlayerItem : MonoBehaviourPunCallbacks
 {
     [SerializeField] private TextMeshProUGUI playerName;
+<<<<<<< HEAD
     [SerializeField] private Color highlightColor;
     [SerializeField] private GameObject leftArrowButton;
     [SerializeField] private GameObject rightArrowButton;
@@ -90,5 +94,11 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         {
             playerProperties["playerAvatar"] = 0;
         }
+=======
+
+    public void SetPlayerInfo(Player _player)
+    {
+        playerName.text = _player.NickName;
+>>>>>>> main
     }
 }
