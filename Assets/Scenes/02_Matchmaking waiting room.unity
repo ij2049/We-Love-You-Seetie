@@ -161,6 +161,7 @@ RectTransform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> main
   m_AnchoredPosition: {x: 0, y: -0.000008276272}
@@ -176,6 +177,9 @@ RectTransform:
 >>>>>>> parent of 232c541... Merge2
 =======
 >>>>>>> main
+=======
+  m_AnchoredPosition: {x: 0, y: 0.0000218683}
+>>>>>>> parent of 6205226... Network - Player choice and spawn1
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &44189075

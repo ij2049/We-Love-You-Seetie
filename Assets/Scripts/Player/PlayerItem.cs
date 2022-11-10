@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 <<<<<<< HEAD
+<<<<<<< HEAD
 using Photon.Pun;
 using Photon.Realtime;
 <<<<<<< HEAD
@@ -20,9 +21,12 @@ using Hashtable = ExitGames.Client.Photon.Hashtable;
 >>>>>>> parent of 232c541... Merge2
 =======
 >>>>>>> main
+=======
+>>>>>>> parent of 6205226... Network - Player choice and spawn1
 
 public class PlayerItem : MonoBehaviourPunCallbacks
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     [SerializeField] private TextMeshProUGUI playerName;
 <<<<<<< HEAD
@@ -47,10 +51,18 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         playerProperties["name"] = "Liam";
         playerProperties["age"] = 15;
         print(playerProperties["name"]);
+=======
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+>>>>>>> parent of 6205226... Network - Player choice and spawn1
     }
 
-    public void SetPlayerInfo(Player _player)
+    // Update is called once per frame
+    void Update()
     {
+<<<<<<< HEAD
         playerName.text = _player.NickName;
         player = _player;
         UpdatePlayerItem(player);
@@ -158,5 +170,8 @@ public class PlayerItem : MonoBehaviourPunCallbacks
 >>>>>>> parent of 232c541... Merge2
 =======
 >>>>>>> main
+=======
+        
+>>>>>>> parent of 6205226... Network - Player choice and spawn1
     }
 }
