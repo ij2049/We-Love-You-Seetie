@@ -22,10 +22,14 @@ public class MatchmakingLobbyManager : MonoBehaviourPunCallbacks
     [SerializeField] private TextMeshProUGUI roomName;
     
     //Player Button
+    [SerializeField] private GameObject btn_play;
     public List<PlayerItem> playerItemList = new List<PlayerItem>();
     public PlayerItem playerItemPrefab;
     public Transform playerItemParent;
 
+    //scene
+    [SerializeField] private string nextSceName;
+    
     public float timeBtwUpdates = 1.5f;
     private float nextUpdateTime;
     private void Start()
@@ -33,11 +37,24 @@ public class MatchmakingLobbyManager : MonoBehaviourPunCallbacks
         JoinLobby();
     }
 
+    private void Update()
+    {
+        //if the players are two button active true
+        if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount == 2)
+        {
+            btn_play.SetActive(true);
+        }
+        else
+        {
+            btn_play.SetActive(false);
+        }
+    }
+
     public void OnClickCreate()
     {
         if (roomInputField.text.Length >= 1)
         {
-            PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() {MaxPlayers = 2});
+            PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() {MaxPlayers = 2, BroadcastPropsChangeToAll = true});
         }
     }
 
@@ -119,6 +136,12 @@ public class MatchmakingLobbyManager : MonoBehaviourPunCallbacks
         {
             PlayerItem newPlayerItem = Instantiate(playerItemPrefab, playerItemParent);
             newPlayerItem.SetPlayerInfo(player.Value);
+
+            if (player.Value == PhotonNetwork.LocalPlayer)
+            {
+                newPlayerItem.ApplyLocalChanges();    
+            }
+            
             playerItemList.Add(newPlayerItem);
         }
     }
@@ -131,5 +154,11 @@ public class MatchmakingLobbyManager : MonoBehaviourPunCallbacks
     public override void OnPlayerLeftRoom(Player otherPlayer)
     {
         UpdatePlayerList();
+    }
+
+    public void OnClickPlayButton()
+    { 
+        if(nextSceName != null)
+        {PhotonNetwork.LoadLevel(nextSceName);}
     }
 }
