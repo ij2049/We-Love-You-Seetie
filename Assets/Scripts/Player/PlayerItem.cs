@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,20 +7,29 @@ using Photon.Pun;
 using Photon.Realtime;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 =======
 >>>>>>> main
 =======
 >>>>>>> parent of 58827b2... Network Player choice and spawn1
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 232c541... Merge2
+=======
+>>>>>>> main
 
-public class PlayerItem : MonoBehaviour
+public class PlayerItem : MonoBehaviourPunCallbacks
 {
 <<<<<<< HEAD
     [SerializeField] private TextMeshProUGUI playerName;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
     [SerializeField] private Color highlightColor;
     [SerializeField] private GameObject leftArrowButton;
     [SerializeField] private GameObject rightArrowButton;
@@ -107,8 +117,11 @@ public class PlayerItem : MonoBehaviour
         
     }
 >>>>>>> parent of 58827b2... Network Player choice and spawn1
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 232c541... Merge2
+=======
+>>>>>>> main
 
     // Update is called once per frame
     void Update()
@@ -129,6 +142,9 @@ public class PlayerItem : MonoBehaviour
 <<<<<<< HEAD
         playerName.text = _player.NickName;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 >>>>>>> main
 =======
         
@@ -137,7 +153,10 @@ public class PlayerItem : MonoBehaviour
 >>>>>>> parent of 48dc655... Network - Player choice and spawn2
 =======
 >>>>>>> Stashed changes
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 232c541... Merge2
+=======
+>>>>>>> main
     }
 }
