@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using Photon.Pun;
 using Photon.Realtime;
 <<<<<<< HEAD
@@ -23,9 +24,12 @@ using Hashtable = ExitGames.Client.Photon.Hashtable;
 >>>>>>> main
 =======
 >>>>>>> parent of 6205226... Network - Player choice and spawn1
+=======
+>>>>>>> parent of 58827b2... Network Player choice and spawn1
 
 public class PlayerItem : MonoBehaviourPunCallbacks
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     [SerializeField] private TextMeshProUGUI playerName;
@@ -173,5 +177,17 @@ public class PlayerItem : MonoBehaviourPunCallbacks
 =======
         
 >>>>>>> parent of 6205226... Network - Player choice and spawn1
+=======
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+>>>>>>> parent of 58827b2... Network Player choice and spawn1
     }
 }

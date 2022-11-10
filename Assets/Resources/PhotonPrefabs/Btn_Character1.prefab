@@ -737,6 +737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   playerName: {fileID: 7301184052041474956}
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -752,6 +753,8 @@ MonoBehaviour:
 >>>>>>> main
 =======
 >>>>>>> parent of 6205226... Network - Player choice and spawn1
+=======
+>>>>>>> parent of 58827b2... Network Player choice and spawn1
 --- !u!1 &7301184052041474946
 GameObject:
   m_ObjectHideFlags: 0

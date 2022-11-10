@@ -137,6 +137,7 @@ public class MatchmakingLobbyManager : MonoBehaviourPunCallbacks
             PlayerItem newPlayerItem = Instantiate(playerItemPrefab, playerItemParent);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             newPlayerItem.SetPlayerInfo(player.Value);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -160,6 +161,8 @@ public class MatchmakingLobbyManager : MonoBehaviourPunCallbacks
 >>>>>>> main
 =======
 >>>>>>> parent of 6205226... Network - Player choice and spawn1
+=======
+>>>>>>> parent of 58827b2... Network Player choice and spawn1
             playerItemList.Add(newPlayerItem);
         }
     }
