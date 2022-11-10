@@ -1,18 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
-using UnityEngine.UI;
 using UnityEngine;
+<<<<<<< HEAD
 using Photon.Pun;
 using Photon.Realtime;
 <<<<<<< HEAD
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 =======
 >>>>>>> main
+=======
+>>>>>>> parent of 58827b2... Network Player choice and spawn1
 
 public class PlayerItem : MonoBehaviourPunCallbacks
 {
+<<<<<<< HEAD
     [SerializeField] private TextMeshProUGUI playerName;
 <<<<<<< HEAD
     [SerializeField] private Color highlightColor;
@@ -95,10 +97,22 @@ public class PlayerItem : MonoBehaviourPunCallbacks
             playerProperties["playerAvatar"] = 0;
         }
 =======
-
-    public void SetPlayerInfo(Player _player)
+=======
+    // Start is called before the first frame update
+    void Start()
     {
+        
+    }
+>>>>>>> parent of 58827b2... Network Player choice and spawn1
+
+    // Update is called once per frame
+    void Update()
+    {
+<<<<<<< HEAD
         playerName.text = _player.NickName;
 >>>>>>> main
+=======
+        
+>>>>>>> parent of 58827b2... Network Player choice and spawn1
     }
 }

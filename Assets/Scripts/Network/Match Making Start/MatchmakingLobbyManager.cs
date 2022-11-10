@@ -135,6 +135,7 @@ public class MatchmakingLobbyManager : MonoBehaviourPunCallbacks
         foreach (KeyValuePair<int, Player> player in PhotonNetwork.CurrentRoom.Players)
         {
             PlayerItem newPlayerItem = Instantiate(playerItemPrefab, playerItemParent);
+<<<<<<< HEAD
             newPlayerItem.SetPlayerInfo(player.Value);
 <<<<<<< HEAD
 
@@ -145,6 +146,8 @@ public class MatchmakingLobbyManager : MonoBehaviourPunCallbacks
             
 =======
 >>>>>>> main
+=======
+>>>>>>> parent of 58827b2... Network Player choice and spawn1
             playerItemList.Add(newPlayerItem);
         }
     }
