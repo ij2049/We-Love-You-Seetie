@@ -114,6 +114,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
 =======
         
 >>>>>>> parent of 58827b2... Network Player choice and spawn1
+<<<<<<< Updated upstream
     }
 >>>>>>> parent of 58827b2... Network Player choice and spawn1
 
@@ -128,5 +129,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
 >>>>>>> parent of 58827b2... Network Player choice and spawn1
 =======
 >>>>>>> parent of 48dc655... Network - Player choice and spawn2
+=======
+>>>>>>> Stashed changes
     }
 }
